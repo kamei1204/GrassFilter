@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grass Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h2>GrassFilter</h2>
+        <div class="grass"></div>
+    </section>
+    <script>
+        document.addEventListener("mousemove", function(e) {
+            const grass = document.querySelector(".grass");
+            grass.style.left = e.offsetX + "px";
+            grass.style.top = e.offsetY + "px";
+        })
+    </script>
+</body>
+</html>

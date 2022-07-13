@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(sunnyCard1.jpg);
+    /* background-attachment は CSS のプロパティで、背景画像の位置をビューポートの中で固定するか、
+    包含ブロックと一緒にスクロールするかを設定します。 */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+section h2 {
+    font-size: 8em;
+    color: white;
+    pointer-events: none;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+section .grass {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    /* backdrop-filter は CSS のプロパティで、要素の背後の領域に、ぼかしや色変化のようなグラフィック効果を適用することができます。
+    要素の背後のすべてに適用されるため、
+    効果を見るためには少なくとも一部が透明な要素またはその背景を作成する必要があります。 */
+    backdrop-filter: blur(10px);
+    transition: 0.2s;
+}
